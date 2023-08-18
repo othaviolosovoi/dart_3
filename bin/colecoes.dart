@@ -1,4 +1,62 @@
 void main(List <String> arguments){
+var portugues = {'Brasil', 'Portugal'};
+var europa = {'Alemanha', 'Portugal', 'Espanha'};
+
+print(portugues.union(europa));
+print(portugues.intersection(europa));
+print(portugues.difference(europa));
+print(portugues.union(europa).difference(portugues.intersection(europa)));
+
+  
+//  // conjuntos
+//  var A = {1, 2, 3, 4, 5, 6};
+//  var B = {1, 3, 7};
+//  print(A.union(B)); // 1,2,3,4,5,6,7 
+//  print(A.intersection(B)); // 1, 3
+//  print(A.difference(B)); // 2,4,5,6
+//  print(B.difference(A)); // 7
+//  print(A.difference(A)); // {} vazio
+
+
+
+  // type anotation
+  // var nomes = {'Ana', 'Pedro'};
+  // print(nomes[0]); // nao funciona
+  // print(nomes{0}); // também nao funciona
+  // print(nomes.elementAt(0)); // começando do zero
+
+  // for (int i = 0; 1 < nomes.length; i++) {
+  //   print(nomes.elementAt(i));
+  // }
+
+  // var eAgora = <String, String>;
+
+
+
+  // var nomes = {'Ana', 'João'}; // _Set<String>
+  // var teste = {}; // _Set<dynamic> é errado, isso aqui é um mapa
+  // var paises = {'Brasil', 'Brasil'}; // Compilador fala q tem dois bagulhos repetidos
+
+
+
+  //var nome = stdin.readLineSync();
+  // var pessoa = (nome, 18);
+  // print(pessoa);
+  
+  
+
+  // tuplas (lista imutável)
+  // também chamadas de records
+  //var tupla = ('Ana', 18, true);
+  // print(tupla);
+  // print(tupla.runtimeType);
+  // print(tupla[0]);
+  // print(tupla{0});
+  // print(tupla.$1);
+  // print(tupla.$1);
+  
+  
+
   // EXEMPLOS DE SOUND NULL SAFETY
   
   // List < List <int?>? >? inteiros;
